@@ -12,9 +12,9 @@ Run `python -m venv venv` to create a virtual environment for the app, then run 
 I have included all the Python dependencies required for the app in the file dependencies.txt. Simply run `pip install -r dependencies.txt` to install all of them.
 
 # Step 4: Set up environment variables for the web app
-Create a `.env` file in the root directory of the project - where manage.py is located, paste the below environment variables in this file and change the values as needed. The file should include the following varibales for MySQL connection.
+Update a `.env` file in the root directory of the project - where manage.py is located, the file should contain the below environment variables for MySQL connection, change the values as needed.
 
-#include below in .env file
+#update the below env variable values in the .env file
 #the value should reflect your MySQL settings on your machine, 
 DB_NAME=djangoapp #name anything for the database used for this web app
 DB_HOST=localhost #by default this should be localhost
