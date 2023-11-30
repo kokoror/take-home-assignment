@@ -1,0 +1,25 @@
+.card:hover {
+    background-color:#f2f2f2 ;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-check-label {
+    flex-grow: 1;
+}
+
+.form-check-input {
+    color: grey;
+}
+
+.form-check-input:checked {
+    border-color: #000000;
+}
+
