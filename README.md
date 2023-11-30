@@ -1,17 +1,18 @@
+# Documentation
 
 This web app requires installation of MySQL (server and workbench) on your local machine, for installation, please refer to the offical documentation at https://dev.mysql.com/doc/mysql-getting-started/en/ 
 and tutorial made by Web Dev Simplified on Youtube at https://www.youtube.com/watch?v=u96rVINbAUI&ab_channel=WebDevSimplified   
 
-# Step 1: Clone the Repository
+## Step 1: Clone the Repository
 Create a local directory, run `git clone https://github.com/kokoror/take-home-assignment.git` to clone the repository to your local directory.
 
-# Step 2: Set up a Python virtual environment:
+## Step 2: Set up a Python virtual environment:
 In the root directory of this repository, run `python -m venv venv` to create a virtual environment for the app, then run `source venv/bin/activate` (if on Unix/Mac) or `venv\Scripts\activate` (if on Windows) to activate it.
 
-# Step 3: Install Python Dependencies
+## Step 3: Install Python Dependencies
 I have included all the Python dependencies required for the app in the file dependencies.txt. Simply run `pip install -r dependencies.txt` to install all of them.
 
-# Step 4: Set up environment variables for the web app
+## Step 4: Set up environment variables for the web app
 Update a `.env` file in the root directory of the project - where manage.py is located, the file should contain the below environment variables for MySQL connection, change the values as needed.
 
 #update the below env variable values in the .env file
@@ -22,17 +23,17 @@ DB_USER=root #your local db user name
 DB_PASS=000000 #your local db password
 DB_PORT=3306 #your db port number
 
-# Step 5: Set up database
+## Step 5: Set up database
 Before proceeding, please make sure your MySQL has been set up and the MySQL server is running.
 In the root directory of this repository: 
 1. Run `python db.py` in the terminal to setup the database used for this web app.
 2. Run `python manage.py migrate` in the terminal to set up tables in MySQL.
 3. Run `python manage.py createsuperuser` to create an admin account. (by doing this, you are able to have access to the admin site at `http://localhost:8000/admin` to interact with the db through user interface in order to add, update, delete the content on the Django app)
 
-# Step 6: Start the server
+## Step 6: Start the server
 Run `python manage.py runserver` in the terminal to start the server
 
-# Step 7: Run the application
+## Step 7: Run the application
 Head to `http://localhost:8000/` , you should see the website's home page with an empty list of team members
 
 
