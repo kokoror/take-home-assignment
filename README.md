@@ -3,7 +3,7 @@ This web app requires installation of MySQL (server and workbench) on your local
 and tutorial made by Web Dev Simplified on Youtube at https://www.youtube.com/watch?v=u96rVINbAUI&ab_channel=WebDevSimplified   
 
 # Step 1: Clone the Repository
-Create a local directory, run `git clone ` to clone the repository to your local directory.
+Create a local directory, run `git clone https://github.com/kokoror/take-home-assignment.git` to clone the repository to your local directory.
 
 # Step 2: Set up a Python virtual environment:
 Run `python -m venv venv` to create a virtual environment for the app, then run `source venv/bin/activate` (if on Unix/Mac) or `venv\Scripts\activate` (if on Windows) to activate it.
