@@ -1,5 +1,5 @@
 # Documentation
-Please note: the contributors `raoqiange` and `kokoror` both are my personal github account, i have set up my local git to use `raoqiange` by default, that's why you are seeing two contributors here. Sorry about the confusion.
+(Please note `raoqiange` and `kokoror` both are my personal github accounts, I have set up my local git to use `raoqiange` by default, that's why you are seeing `raoqiange`'s commits on `kokoror`'s repository here. Sorry about the confusion.)
 
 This web app requires installation of MySQL (server and workbench) on your local machine, for installation, please refer to the offical documentation at https://dev.mysql.com/doc/mysql-getting-started/en/ 
 and tutorial made by Web Dev Simplified on Youtube at https://www.youtube.com/watch?v=u96rVINbAUI&ab_channel=WebDevSimplified   
