@@ -4,17 +4,18 @@ This web app requires installation of MySQL (server and workbench) on your local
 and tutorial made by Web Dev Simplified on Youtube at https://www.youtube.com/watch?v=u96rVINbAUI&ab_channel=WebDevSimplified   
 
 ## Step 1: Clone the Repository
-Create a local directory, run `git clone https://github.com/kokoror/take-home-assignment.git` to clone the repository to your local directory.
+Create a local directory, cd into this directory, run `git clone https://github.com/kokoror/take-home-assignment.git` to clone the repository to your local directory.
 
 ## Step 2: Set up a Python virtual environment:
-In the root directory of this repository, run `python -m venv venv` to create a virtual environment for the app, then run `source venv/bin/activate` (if on Unix/Mac) or `venv\Scripts\activate` (if on Windows) to activate it.
+In the root directory of your local repository, run `python -m venv venv` in terminal to create a virtual environment for the app, then run `source venv/bin/activate` (if on Unix/Mac) or `venv\Scripts\activate` (if on Windows) to activate it.
 
 ## Step 3: Install Python Dependencies
 I have included all the Python dependencies required for the app in the file dependencies.txt. Simply run `pip install -r dependencies.txt` to install all of them.
 
 ## Step 4: Set up environment variables for the web app
-Update a `.env` file in the root directory of the project - where manage.py is located, the file should contain the below environment variables for MySQL connection, change the values as needed.
+Update `.env` file in the root directory of the project - where manage.py is located, the file should contain the below environment variables for MySQL connection, change the values as needed.
 
+```
 #update the below env variable values in the .env file
 #the value should reflect your MySQL settings on your machine, 
 DB_NAME=djangoapp #name anything for the database used for this web app
@@ -22,9 +23,10 @@ DB_HOST=localhost #by default this should be localhost
 DB_USER=root #your local db user name
 DB_PASS=000000 #your local db password
 DB_PORT=3306 #your db port number
+```
 
 ## Step 5: Set up database
-Before proceeding, please make sure your MySQL has been set up and the MySQL server is running.
+Before proceeding, please make sure your local MySQL has been set up and the MySQL server is running on your machine.
 In the root directory of this repository: 
 1. Run `python db.py` in the terminal to setup the database used for this web app.
 2. Run `python manage.py migrate` in the terminal to set up tables in MySQL.
