@@ -6,7 +6,7 @@ and tutorial made by Web Dev Simplified on Youtube at https://www.youtube.com/wa
 Create a local directory, run `git clone https://github.com/kokoror/take-home-assignment.git` to clone the repository to your local directory.
 
 # Step 2: Set up a Python virtual environment:
-Run `python -m venv venv` to create a virtual environment for the app, then run `source venv/bin/activate` (if on Unix/Mac) or `venv\Scripts\activate` (if on Windows) to activate it.
+In the root directory of this repository, run `python -m venv venv` to create a virtual environment for the app, then run `source venv/bin/activate` (if on Unix/Mac) or `venv\Scripts\activate` (if on Windows) to activate it.
 
 # Step 3: Install Python Dependencies
 I have included all the Python dependencies required for the app in the file dependencies.txt. Simply run `pip install -r dependencies.txt` to install all of them.
@@ -23,8 +23,11 @@ DB_PASS=000000 #your local db password
 DB_PORT=3306 #your db port number
 
 # Step 5: Set up database
-Run `python manage.py migrate` in the terminal to set up tables in MySQL.
-Run `python manage.py createsuperuser` to create an admin account.
+Before proceeding, please make sure your MySQL has been set up and the MySQL server is running.
+In the root directory of this repository: 
+1. Run `python db.py` in the terminal to setup the database used for this web app.
+2. Run `python manage.py migrate` in the terminal to set up tables in MySQL.
+3. Run `python manage.py createsuperuser` to create an admin account. (by doing this, you are able to have access to the admin site at `http://localhost:8000/admin` to interact with the db through user interface in order to add, update, delete the content on the Django app)
 
 # Step 6: Start the server
 Run `python manage.py runserver` in the terminal to start the server
